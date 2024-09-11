@@ -12,10 +12,10 @@ const store = async (req, res) => {
 
 const index = async (req, res) => {
     try {
-      const clientes = await Pet.find();
-      res.status(200).json(clientes);
+      const pets = await Pet.find();
+      res.status(200).json(pets);
     } catch (error) {
-      res.status(400).json({ error: 'Erro ao buscar clientes' });
+      res.status(400).json({ error: 'Erro ao buscar pets' });
     }
 };
 
