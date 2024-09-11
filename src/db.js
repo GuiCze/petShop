@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const mongoDB = "mongodb://localhost:27017/petShop"
+const mongoDB = "mongodb+srv://Mill:212777550@cluster0.pvlc3.mongodb.net/petShop"
 
 async function main() {
     await mongoose.connect(mongoDB);
